@@ -1,8 +1,8 @@
 [alias]
     push = push -u
-# [user]
-#     name =
-#     email =
+[user]
+    name = skovhus
+    email =
 [push]
     default = current
     followTags = true
