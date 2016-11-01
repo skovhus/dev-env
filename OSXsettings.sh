@@ -15,6 +15,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 
+# Hide the Dock
+defaults write com.apple.Dock autohide -bool TRUE;
+
+killall Dock
+
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 

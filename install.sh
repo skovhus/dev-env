@@ -65,7 +65,7 @@ brew cask install google-chrome
 brew cask install atom
 brew cask install sublime-text
 brew cask install gitup
-brew cask install moom
+brew cask install shiftit
 brew cask install dropbox
 brew cask install flux
 brew cask install jumpcut
@@ -93,4 +93,5 @@ echo "- Setup terminal to import solazried-dark theme, with Menlo Regular 10pt a
 echo "- ensure ~/.gitconfig is correct"
 echo "- Fix all issues from running brew doctor"
 echo "- Set up short cuts http://apple.stackexchange.com/questions/167967/creating-system-wide-keyboard-shortcut-to-launch-applications"
+echo "- Configure shiftit, jumpcut to start, etc..."
 echo "- Open Sublime and install Package Control"
