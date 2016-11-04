@@ -49,7 +49,7 @@ brew install the_silver_searcher
 brew install jq
 
 # Install python packages
-pip install requests virtualenv
+pip install requests virtualenv pep8 pylint flake8
 
 # Symlink dot files
 ln -fs $PWD/home/.zshrc ~
