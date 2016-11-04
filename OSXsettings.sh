@@ -37,3 +37,6 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
+
+# No desktop, I just put garbage there...
+defaults write com.apple.finder CreateDesktop -bool FALSE;killall Finder
