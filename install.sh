@@ -32,21 +32,23 @@ echo "> Installing common sanity..."
 brew tap homebrew/dupes
 brew update
 brew upgrade
+brew install awscli
 brew install coreutils
-brew install make
-brew install gnu-sed
-brew install wget
 brew install curl
+brew install git
+brew install gnu-sed
 brew install go
+brew install jq
+brew install make
+brew install mercurial
 brew install node
+brew install pstree
 brew install python
 brew install ruby
-brew install git
-brew install mercurial
-brew install tree
-brew install pstree
 brew install the_silver_searcher
-brew install jq
+brew install tree
+brew install wget
+brew install yarn
 
 # Install python packages
 pip install requests virtualenv pep8 pylint flake8
@@ -61,18 +63,22 @@ ln -fs $PWD/skovhus.zsh-theme ~/.oh-my-zsh/themes/skovhus.zsh-theme
 
 # Install Apps
 echo "> Installing Apps you will like..."
-brew cask install google-chrome
 brew cask install atom
-brew cask install sublime-text
-brew cask install gitup
-brew cask install shiftit
+brew cask install docker
 brew cask install dropbox
 brew cask install flux
+brew cask install gitup
+brew cask install google-chrome
+brew cask install java
 brew cask install jumpcut
 brew cask install licecap
+brew cask install mysql-utilities
 brew cask install omnigraffle
+brew cask install shiftit
 brew cask install spotify
-brew cask install docker
+brew cask install sublime-text
+brew cask install vlc
+
 
 # Atom packages
 echo "> Setting up Atom..."
@@ -93,5 +99,5 @@ echo "- Setup terminal to import solazried-dark theme, with Menlo Regular 10pt a
 echo "- ensure ~/.gitconfig is correct"
 echo "- Fix all issues from running brew doctor"
 echo "- Set up short cuts http://apple.stackexchange.com/questions/167967/creating-system-wide-keyboard-shortcut-to-launch-applications"
-echo "- Configure shiftit, jumpcut to start, etc..."
+echo "- Configure shiftit, moom, jumpcut to start, etc..."
 echo "- Open Sublime and install Package Control"

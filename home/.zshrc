@@ -53,7 +53,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 alias ls='ls -lah'
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/Cellar/node/7.4.0/bin/:$PATH
 export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -89,3 +89,8 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 bindkey -s "^[OX" "="
+
+
+# sierra and ssh
+ssh-add -A 2>/dev/null;
+
