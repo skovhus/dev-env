@@ -45,6 +45,7 @@ brew install node
 brew install pstree
 brew install python
 brew install ruby
+brew install scala
 brew install the_silver_searcher
 brew install tree
 brew install wget
@@ -55,7 +56,10 @@ pip install requests virtualenv pep8 pylint flake8
 
 # Symlink dot files
 ln -fs $PWD/home/.zshrc ~
-cp home/.gitconfig ~  # e-mail not in git
+ln -fs $PWD/home/.ssh/config ~/.ssh
+
+# move .gitconfig without e-mail
+cp home/.gitconfig ~
 
 # And oh my zsh theme
 mkdir -p ~/.oh-my-zsh/themes/
@@ -96,7 +100,7 @@ echo "-----------------------------------------"
 echo "Manual steps:"
 echo "-----------------------------------------"
 echo "- Setup terminal to import solazried-dark theme, with Menlo Regular 10pt and block cursor."
-echo "- ensure ~/.gitconfig is correct"
+echo "- add e-mail to ~/.gitconfig"
 echo "- Fix all issues from running brew doctor"
 echo "- Set up short cuts http://apple.stackexchange.com/questions/167967/creating-system-wide-keyboard-shortcut-to-launch-applications"
 echo "- Configure shiftit, moom, jumpcut to start, etc..."
