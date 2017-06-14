@@ -40,7 +40,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker git)
+plugins=(brew docker git yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,7 +57,6 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/Cellar/node/7.4.0/bin/:$PATH
 export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-ulimit -S -n 10000
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -94,3 +93,4 @@ bindkey -s "^[OX" "="
 # sierra and ssh
 ssh-add -A 2>/dev/null;
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
