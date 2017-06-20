@@ -48,8 +48,12 @@ brew install ruby
 brew install scala
 brew install the_silver_searcher
 brew install tree
+brew install watchman
 brew install wget
 brew install yarn
+
+# up the limit for files opened
+sudo launchctl limit maxfiles 2048 unlimited
 
 # Install python packages
 pip install requests virtualenv pep8 pylint flake8
@@ -77,12 +81,12 @@ brew cask install java
 brew cask install jumpcut
 brew cask install licecap
 brew cask install mysql-utilities
+brew cask install mysqlworkbench
 brew cask install omnigraffle
 brew cask install shiftit
 brew cask install spotify
 brew cask install sublime-text
 brew cask install vlc
-
 
 # Atom packages
 echo "> Setting up Atom..."

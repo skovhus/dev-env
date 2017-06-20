@@ -40,7 +40,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker git yarn)
+plugins=(brew docker git yarn aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,7 +53,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 alias ls='ls -lah'
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/Cellar/node/7.4.0/bin/:$PATH
+export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/Cellar/node/7.4.0/bin:$PATH
 export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -93,4 +93,5 @@ bindkey -s "^[OX" "="
 # sierra and ssh
 ssh-add -A 2>/dev/null;
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANDROID_HOME_SDK=/usr/local/share/android-sdk
