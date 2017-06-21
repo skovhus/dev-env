@@ -87,11 +87,14 @@ brew cask install shiftit
 brew cask install spotify
 brew cask install sublime-text
 brew cask install vlc
+brew cask install visual-studio-code
 
 # Atom packages
-echo "> Setting up Atom..."
+echo "> Setting up Atom and VS Code..."
 apm install `cat atom-packages.list`
-cp .atom/config.cson ~/.atom/
+ln -fs $PWD/home/.atom/config.cson ~/.atom
+ln -fs $PWD/code-settings.json ~/Library/Application Support/Code/User
+
 
 # Sublime
 echo "> Setting up Sublime"
