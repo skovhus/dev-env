@@ -89,17 +89,24 @@ brew cask install sublime-text
 brew cask install vlc
 brew cask install visual-studio-code
 
-# Atom packages
-echo "> Setting up Atom and VS Code..."
-apm install `cat atom-packages.list`
+# Atom
+echo "> Setting up Atom..."
+apm install `cat apps/atom/atom-packages.list`
 ln -fs $PWD/home/.atom/config.cson ~/.atom
-ln -fs $PWD/code-settings.json ~/Library/Application Support/Code/User
 
+# VS Code
+echo "> Setting up VS Code..."
+mkdir -p ~/Library/Application\ Support/Code/User
+ln -fs $PWD/apps/vs-code/settings.json ~/Library/Application\ Support/Code/User
+ln -fs $PWD/apps/vs-code/keybindings.json ~/Library/Application\ Support/Code/User
+for module in `cat apps/vs-code/extensions.list`; do
+    code --install-extension "$module" || true
+done
 
 # Sublime
 echo "> Setting up Sublime"
 mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-cp Sublime/User/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+cp apps/Sublime/User/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 echo "> Done!"
 
