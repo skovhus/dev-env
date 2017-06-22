@@ -1,4 +1,1 @@
-[
-    { "key": "alt+up", "command": "editor.action.insertCursorAbove" },
-    { "key": "alt+down", "command": "editor.action.insertCursorBelow" }
-]
+[]

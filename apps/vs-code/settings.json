@@ -1,6 +1,7 @@
 {
     "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New'",
     "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "none",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -11,5 +12,4 @@
     "workbench.welcome.enabled": false,
     "flow.useNPMPackagedFlow": true,
     "javascript.validate.enable": false // Flow
-    // "files.associations": { "*.js": "flow" }
 }
